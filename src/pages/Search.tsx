@@ -1,5 +1,16 @@
+import { useLocation } from 'react-router-dom'
+
+import Grid from "../components/ui/Grid"
+
 const Search: React.FC = () => {
-  return <h1>Search Placeholder</h1>
+  const location = useLocation()
+  
+  const queryParams = new URLSearchParams(location.search)
+  const q = queryParams.get('q')
+
+  const url: string = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.REACT_APP_GIPHY_KEY}&q=${q}&limit=50&offset=0&rating=g&lang=en`
+
+  return <Grid url={url} random={false} />
 }
 
 export default Search

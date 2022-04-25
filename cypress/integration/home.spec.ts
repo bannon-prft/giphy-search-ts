@@ -12,14 +12,15 @@ describe('Home Page', () => {
   })
 
   it('should navigate to the search page when the form is submitted', () => {
-    cy.get('form').submit()
+    cy.get('form').type('test').submit()
     cy.url().should('contain', 'search')
   })
 
   it('should display 3 random GIFs on page load', () => {
-    cy.get('ul').find('li')
+    cy.get('ul')
+      .find('li')
       .should('have.length', 3)
-      .each($el => {
+      .each(($el) => {
         expect($el.children('video')).length.to.not.equal(0)
       })
   })
