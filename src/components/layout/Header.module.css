@@ -1,0 +1,25 @@
+.header {
+  background: rgb(0, 36, 29);
+  background: linear-gradient(
+    90deg,
+    rgb(36 0 0) 0%,
+    rgb(72 9 121) 35%,
+    rgb(255 0 0) 100%
+  );
+  margin: 0;
+  padding: 2rem;
+  color: white;
+  mix-blend-mode: difference;
+  box-shadow: 1px 1px 20px 6px rgb(161 247 148);
+}
+
+.title {
+  height: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  filter: invert(1);
+  text-shadow: 6px 5px 10px #b10000;
+}
