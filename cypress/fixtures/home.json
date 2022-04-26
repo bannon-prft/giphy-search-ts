@@ -1,14 +1,10 @@
-[
-  {
+{
+  "data": {
     "title": "Bird Glitter GIF by Matchbox Mountain",
-    "url": "https://media2.giphy.com/media/3o7WIu6swb5M5uEaCA/giphy.mp4?cid=817fd13c290ec33350c570a185393079b1ca9f56534ecb6c&rid=giphy.mp4&ct=g"
-  },
-  {
-    "title": "GIF by planetmclulu",
-    "url": "https://media3.giphy.com/media/fndxeg3iQgGbuK4Q97/giphy.mp4?cid=817fd13cc0441c08148e8997d58feb77f4ab466cccd3dcc2&rid=giphy.mp4&ct=g"
-  },
-  {
-    "title": "car yes GIF by Sixt",
-    "url": "https://media4.giphy.com/media/iDDK3IBiUHAXaTiWkv/giphy.mp4?cid=817fd13cc3270b586345fd3bd119813cf4dcdfa39cbff171&rid=giphy.mp4&ct=g"
+    "images": {
+      "original_mp4": {
+        "mp4": "https://media2.giphy.com/media/3o7WIu6swb5M5uEaCA/giphy.mp4?cid=817fd13c290ec33350c570a185393079b1ca9f56534ecb6c&rid=giphy.mp4&ct=g"
+      }
+    }
   }
-]
+}

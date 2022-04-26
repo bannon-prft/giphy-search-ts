@@ -41,7 +41,7 @@ const Grid: React.FC<{ url: string; random: boolean }> = (props) => {
       }
 
       const data = await res.json()
-      
+
       for (const key in data.data) {
         dataArray.push({
           title: data.data[key].title,
@@ -78,7 +78,11 @@ const Grid: React.FC<{ url: string; random: boolean }> = (props) => {
   return (
     <ul className={styles.grid}>
       {gifs.map((gif) => (
-        <Card key={gif.title} source={gif.url} title={gif.title} />
+        <Card
+          key={gif.title}
+          source={gif.url}
+          title={gif.title}
+        />
       ))}
     </ul>
   )

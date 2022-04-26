@@ -10,7 +10,7 @@ const SearchBar: React.FC = () => {
   const submitHandler = (event: any) => {
     event.preventDefault()
 
-    const enteredText = inputRef.current!.value
+    const enteredText: string = inputRef.current!.value
 
     if (enteredText.trim().length === 0) {
       // throw an error

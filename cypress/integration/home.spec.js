@@ -17,11 +17,19 @@ describe('Home Page', () => {
   })
 
   it('should display 3 random GIFs on page load', () => {
-    cy.get('ul')
-      .find('li')
-      .should('have.length', 3)
-      .each(($el) => {
-        expect($el.children('video')).length.to.not.equal(0)
-      })
+    cy.intercept(
+      {
+        method: 'GET',
+        url: 'https://api.giphy.com/v1/gifs/random*',
+      },
+      {
+        fixture: 'home',
+      }
+    ).as('random')
+
+    cy.wait('@random').then((interception) => {
+      cy.log(interception)
+      cy.get('[data-cy="test"]').should('have.length', 3)
+    })
   })
 })
