@@ -5,8 +5,8 @@ import styles from './Grid.module.css'
 
 const Grid: React.FC<{ url: string; random: boolean }> = (props) => {
   const [gifs, setGifs] = useState<any[]>([])
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState()
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [error, setError] = useState<any>()
 
   useEffect(() => {
     const dataArray: {
@@ -76,6 +76,7 @@ const Grid: React.FC<{ url: string; random: boolean }> = (props) => {
   }
 
   return (
+    <div className={styles.container}>
     <ul className={styles.grid}>
       {gifs.map((gif) => (
         <Card
@@ -85,6 +86,7 @@ const Grid: React.FC<{ url: string; random: boolean }> = (props) => {
         />
       ))}
     </ul>
+    </div>
   )
 }
 

@@ -6,14 +6,14 @@ import Search from './pages/Search'
 
 function App() {
   return (
-    <>
+    <main>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
         </Routes>
       </Layout>
-    </>
+    </main>
   )
 }
 

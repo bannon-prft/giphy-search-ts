@@ -7,10 +7,10 @@
     rgb(255 0 0) 100%
   );
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   color: white;
   mix-blend-mode: difference;
-  box-shadow: 1px 1px 20px 6px rgb(161 247 148);
+  box-shadow: 1px 1px 20px 1px rgb(161 247 148);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,5 +24,7 @@
   color: transparent;
   text-align: center;
   filter: invert(1);
+  font-size: 3rem;
+  margin: 0.7rem;
   text-shadow: 6px 5px 10px #b10000;
 }
